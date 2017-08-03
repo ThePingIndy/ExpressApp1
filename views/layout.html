@@ -1,0 +1,20 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+
+    {% block head %}
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    {% endblock %}
+</head>
+<body>
+    <ul class="menu-bar">
+        <li><a href="/api/superheros">Super Heroes</a></li>
+        <li><a href="/game">Game Page</a></li>
+    </ul>
+    {% block content %}{% endblock %}
+    <script type="text/javascript" src="/dist/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/script.js"></script>
+</body>
+</html>
